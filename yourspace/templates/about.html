@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %}
+{% if current_user.is_authenticated %}
+  <h1>Welcome back, {{ current_user.username }}</h1>
+{% else %}
+  <h1>About YrSpace!</h1></h1>
+{% endif %}
+  <p>The only blog built for you.</p>
+{% endblock content %}
